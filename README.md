@@ -10,32 +10,31 @@
  <img height="400" src="./images/archi.png" />
 </div>
 
-
 ## Step by step guide
 
 ## Section 1
 ### FreeIPA Server Installation and Configuration
-Provision FreeIPA Server and two other Client machine to VirtualBox using Vagrant infrastructure as code.
-Login To FreeIPA server terminal mode and install and configure it. 
+ 1. Provision FreeIPA Server and two other Client machine to VirtualBox using Vagrant infrastructure as code.
+ 2. Login To FreeIPA server terminal mode and install and configure it. 
 
 
 ## Section 2
 ### FreeIPA Client installation and connection
-Install and configure client machine with FreeIPA client
-Connect the two client machine to FreeIPA server
+ 1. Install and configure client machine with FreeIPA client
+ 2. Connect the two client machine to FreeIPA server
 
 ## Section 3
 ### FreeIPA User Administration and management
-Create Users in FreeIPA server,
-Create Group in FreeIPA server
-Asign Users to Group.
-Login to any of the client machine using user login details.
+ 1. Create Users in FreeIPA server,
+ 2. Create Group in FreeIPA server
+ 3. Asign Users to Group.
+ 4. Login to any of the client machine using user login details.
 
 
 ## Section 4
 ### Multi-Factor Authentication for Secure Login
-Using Token
-Using SSH-Key  
+1. Using Token
+2. Using SSH-Key  
 
 
 
@@ -88,6 +87,7 @@ timedatectl status
 
 timedatectl set-timezone Africa/Lagos
 
+yum -y install freeipa-client ipa-admintools
 
 ipa-client-install --hostname=`hostname -f` --mkhomedir --server=freeipa.securespherenetwork.sec  --domain securespherenetwork.sec --realm SECURESPHERENETWORK.SEC
 ```

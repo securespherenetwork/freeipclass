@@ -16,6 +16,8 @@ dnf install ipa-server ipa-server-dns -y
 ipa-server-install --setup-dns
 
 
+# Optional
+
 firewall-cmd --permanent --add-service=ntp
 firewall-cmd --permanent --add-service=http
 firewall-cmd --permanent --add-service=https
